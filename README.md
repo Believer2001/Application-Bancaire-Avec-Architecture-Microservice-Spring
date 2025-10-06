@@ -21,7 +21,10 @@ créeons.
 <h3> 6. Tester le web micro-service en utilisant un client REST comme Postman : </h3>
 
 ![test de la partie rest via postman](/img/img2.png)
-
+![test de la partie rest via postman](/img/img3.png)
+![test de la partie rest via postman](/img/img4.png)
+![test de la partie rest via postman](/img/img5.png)
+![test de la partie rest via postman](/img/img6.png)
 <h3> 7. Générer et tester le documentation Swagger de des API Rest du Web service</h3>
 
 <h3> 8. Exposer une API Restful en utilisant Spring Data Rest en exploitant des projections</h3>
