@@ -1,18 +1,25 @@
 package enset.ma.bankaccountservice.web;
 
 
+import enset.ma.bankaccountservice.dto.BankAccountRequestDTO;
+import enset.ma.bankaccountservice.dto.BankAccountResponseDTO;
 import enset.ma.bankaccountservice.entities.BankAccount;
 import enset.ma.bankaccountservice.repositories.BankAccountRepository;
+import enset.ma.bankaccountservice.service.AccountService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@RequestMapping("/api")
 public class AccountRestController {
     private  final BankAccountRepository bankAccountRepository;
+    private  final  AccountService accountService;
     //  pour faire l'injection de dépendance
-    public AccountRestController(BankAccountRepository bankAccountRepository) {
+    public AccountRestController(BankAccountRepository bankAccountRepository,
+                                 AccountService accountService) {
         this.bankAccountRepository = bankAccountRepository;
+        this.accountService = accountService;
     }
 
 
@@ -27,9 +34,8 @@ public class AccountRestController {
     }
 
     @PostMapping("/bankAccounts")
-    public  BankAccount save(@RequestBody BankAccount bankAccount){
-        if(bankAccount.getId() == null) bankAccount.setId(java.util.UUID.randomUUID().toString());
-        return  bankAccountRepository.save(bankAccount);
+    public BankAccountResponseDTO save(@RequestBody BankAccountRequestDTO bankAccountRequestDTO){
+        return accountService.addAccount(bankAccountRequestDTO);
     }
 
     @PutMapping("/bankAccounts/{id}")

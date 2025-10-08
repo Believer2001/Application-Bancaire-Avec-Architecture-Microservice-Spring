@@ -28,11 +28,17 @@ créeons.
 <h3> 7. Générer et tester le documentation Swagger de des API Rest du Web service</h3>
 
 ![test de la partie rest via postman](/img/img7.png)
+
 ![test de la partie rest via postman](/img/img8.png)
 
 
 
 <h3> 8. Exposer une API Restful en utilisant Spring Data Rest en exploitant des projections</h3>
+
+![test de restful](/img/img9.png)
+
+![test de restful](/img/img10.png)
+
 
 <h3> 9. Créer les DTOs et Mappers </h3>
 
