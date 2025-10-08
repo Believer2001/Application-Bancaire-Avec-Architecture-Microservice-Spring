@@ -23,9 +23,14 @@ créeons.
 ![test de la partie rest via postman](/img/img2.png)
 ![test de la partie rest via postman](/img/img3.png)
 ![test de la partie rest via postman](/img/img4.png)
-![test de la partie rest via postman](/img/img5.png)
+![test de la partie rest via postman](/img/IMG5.png)
 ![test de la partie rest via postman](/img/img6.png)
 <h3> 7. Générer et tester le documentation Swagger de des API Rest du Web service</h3>
+
+![test de la partie rest via postman](/img/img7.png)
+![test de la partie rest via postman](/img/img8.png)
+
+
 
 <h3> 8. Exposer une API Restful en utilisant Spring Data Rest en exploitant des projections</h3>
 
