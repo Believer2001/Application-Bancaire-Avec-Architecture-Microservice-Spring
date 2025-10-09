@@ -46,3 +46,12 @@ créeons.
 
 <h3>11. Créer un Web service GraphQL pour ce Micro-service en utilisant cette vidéo </h3>
 
+![test de restful](/img/img11.png)
+![test de restful](/img/img12.png)
+
+ personnalisation du message d'erreur en recuperant  definissant  la classe d'exception handler :
+
+![test de restful](/img/img13.png)
+
+
+
